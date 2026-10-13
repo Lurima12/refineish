@@ -1,4 +1,4 @@
-# Dash to Dock Tweaks
+# Refineish
 
 An add-on for **Dash to Dock** (and Ubuntu Dock) for GNOME Shell 45-50, with Flourish.
 
@@ -26,10 +26,13 @@ An add-on for **Dash to Dock** (and Ubuntu Dock) for GNOME Shell 45-50, with Flo
 
 ## Install
 
-    gnome-extensions pack --force dash-to-dock-tweaks@lurim412
-    gnome-extensions install --force dash-to-dock-tweaks@lurim412.shell-extension.zip
-    # log out and back in (Wayland) or Alt+F2, r, Enter (X11), then:
-    gnome-extensions enable dash-to-dock-tweaks@lurim412
+```
+git clone https://github.com/Lurima12/refineish.git refineish@lurim412
+cp -r refineish@lurim412 ~/.local/share/gnome-shell/extensions
+
+# log out and back in (Wayland) or Alt+F2, r, Enter (X11), then:
+gnome-extensions enable dash-to-dock-tweaks@lurim412
+```
 
 Dash to Dock must be installed and enabled.
 
