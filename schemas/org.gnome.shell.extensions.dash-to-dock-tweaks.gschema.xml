@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="dash-to-dock-tweaks@lurim412">
+  <schema id="org.gnome.shell.extensions.dash-to-dock-tweaks"
+          path="/org/gnome/shell/extensions/dash-to-dock-tweaks/">
+
+    <!-- Gaps: margin (px) between the dock and each screen edge -->
+    <key name="gaps-enabled" type="b">
+      <default>false</default>
+      <summary>Override the dock gaps</summary>
+      <description>When disabled, the spacing around the dock is left to Dash to Dock. When enabled, the gap for the side the dock is on is used exactly (0 means flush with the screen edge).</description>
+    </key>
+    <key name="follow-dock-widgets" type="b">
+      <default>true</default>
+      <summary>Align other add-ons' dock widgets with the app icons</summary>
+      <description>Centres widgets that other extensions (for example Dynamic Music Pill) place inside the dock on the app icons, also when a gap is set.</description>
+    </key>
+    <key name="gap-top" type="i">
+      <range min="0" max="200"/>
+      <default>0</default>
+      <summary>Top gap</summary>
+      <description>Distance in pixels between the dock and the top screen edge.</description>
+    </key>
+    <key name="gap-bottom" type="i">
+      <range min="0" max="200"/>
+      <default>0</default>
+      <summary>Bottom gap</summary>
+      <description>Distance in pixels between the dock and the bottom screen edge.</description>
+    </key>
+    <key name="gap-left" type="i">
+      <range min="0" max="200"/>
+      <default>0</default>
+      <summary>Left gap</summary>
+      <description>Distance in pixels between the dock and the left screen edge.</description>
+    </key>
+    <key name="gap-right" type="i">
+      <range min="0" max="200"/>
+      <default>0</default>
+      <summary>Right gap</summary>
+      <description>Distance in pixels between the dock and the right screen edge.</description>
+    </key>
+
+    <!-- Background -->
+    <key name="manage-background" type="b">
+      <default>true</default>
+      <summary>Override the dock background</summary>
+      <description>When disabled, the dock background colour is left to Dash to Dock.</description>
+    </key>
+    <key name="style-mode" type="s">
+      <choices>
+        <choice value="system"/>
+        <choice value="light"/>
+        <choice value="dark"/>
+      </choices>
+      <default>'system'</default>
+      <summary>Dock style</summary>
+      <description>Use a light or dark dock background, or follow the system colour scheme.</description>
+    </key>
+    <key name="light-color" type="s">
+      <default>'rgb(242,242,242)'</default>
+      <summary>Light background colour</summary>
+    </key>
+    <key name="dark-color" type="s">
+      <default>'rgb(36,36,36)'</default>
+      <summary>Dark background colour</summary>
+    </key>
+    <key name="background-opacity" type="i">
+      <range min="0" max="100"/>
+      <default>90</default>
+      <summary>Background opacity (percent)</summary>
+    </key>
+
+    <!-- Foreground (Show Applications button icon) -->
+    <key name="manage-foreground" type="b">
+      <default>true</default>
+      <summary>Override the dock icon colour</summary>
+      <description>Colours the Show Applications button icon so it stays visible on light and dark dock styles.</description>
+    </key>
+    <key name="foreground-mode" type="s">
+      <choices>
+        <choice value="auto"/>
+        <choice value="custom"/>
+      </choices>
+      <default>'auto'</default>
+      <summary>Foreground colour mode</summary>
+    </key>
+    <key name="foreground-color" type="s">
+      <default>'rgb(36,36,36)'</default>
+      <summary>Custom foreground colour</summary>
+    </key>
+
+    <!-- Border -->
+    <key name="border-enabled" type="b">
+      <default>false</default>
+      <summary>Customize the dock border</summary>
+    </key>
+    <key name="border-width" type="i">
+      <range min="0" max="20"/>
+      <default>1</default>
+      <summary>Border width (px)</summary>
+    </key>
+    <key name="border-color-mode" type="s">
+      <choices>
+        <choice value="auto"/>
+        <choice value="custom"/>
+      </choices>
+      <default>'auto'</default>
+      <summary>Border colour mode</summary>
+      <description>Automatic picks a subtle light or dark border that matches the dock style.</description>
+    </key>
+    <key name="border-color" type="s">
+      <default>'rgb(128,128,128)'</default>
+      <summary>Custom border colour</summary>
+    </key>
+    <key name="border-opacity" type="i">
+      <range min="0" max="100"/>
+      <default>25</default>
+      <summary>Border opacity (percent)</summary>
+    </key>
+    <key name="override-radius" type="b">
+      <default>false</default>
+      <summary>Override the corner radius</summary>
+    </key>
+    <key name="border-radius" type="i">
+      <range min="0" max="60"/>
+      <default>12</default>
+      <summary>Corner radius (px)</summary>
+    </key>
+
+    <!-- Visibility -->
+    <key name="hide-in-overview" type="b">
+      <default>false</default>
+      <summary>Hide the dock in Activities Overview</summary>
+      <description>Fades the dock out while the window overview is open.</description>
+    </key>
+    <key name="hide-in-app-grid" type="b">
+      <default>false</default>
+      <summary>Hide the dock in the app grid</summary>
+      <description>Fades the dock out while the app grid (Show Applications) is open.</description>
+    </key>
+
+    <!-- Running apps section -->
+    <key name="running-section-enabled" type="b">
+      <default>true</default>
+      <summary>Separate running apps from pinned apps</summary>
+      <description>Pinned apps move to the running section while they run and back to the pinned section when they close.</description>
+    </key>
+    <key name="separator-visible" type="b">
+      <default>true</default>
+      <summary>Show the separator line</summary>
+    </key>
+    <key name="separator-thickness" type="i">
+      <range min="1" max="8"/>
+      <default>2</default>
+      <summary>Separator thickness (px)</summary>
+    </key>
+    <key name="separator-length" type="i">
+      <range min="10" max="150"/>
+      <default>60</default>
+      <summary>Separator length (percent of icon size)</summary>
+    </key>
+    <key name="separator-color-mode" type="s">
+      <choices>
+        <choice value="auto"/>
+        <choice value="custom"/>
+      </choices>
+      <default>'auto'</default>
+      <summary>Separator colour mode</summary>
+    </key>
+    <key name="separator-color" type="s">
+      <default>'rgb(128,128,128)'</default>
+      <summary>Custom separator colour</summary>
+    </key>
+    <key name="separator-opacity" type="i">
+      <range min="0" max="100"/>
+      <default>30</default>
+      <summary>Separator opacity (percent)</summary>
+    </key>
+
+    <key name="debug" type="b">
+      <default>false</default>
+      <summary>Log debug messages</summary>
+    </key>
+  </schema>
+</schemalist>
