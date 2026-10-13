@@ -1,6 +1,6 @@
 # Refineish
 
-An add-on for **Dash to Dock** (and Ubuntu Dock) for GNOME Shell 45-50, with Flourish.
+An add-on for **Dash to Dock** (and Ubuntu Dock) for GNOME Shell 45-50, with Flourish and Dynamic Music Pill extensions compatibility.
 
 - **Gaps**: separate margin between the dock and the bottom, left, right and top screen edges.
 - **Style**: light, dark, or follow the system colour scheme, with adjustable colours and opacity.
@@ -41,13 +41,6 @@ Dash to Dock must be installed and enabled.
 The extension does not import or patch Dash to Dock. It finds the dock actor and adds
 style declarations (margins, colours, border) to the dock background. disable()
 restores every change.
-
-## Flourish compatibility
-
-Flourish animates the dock icons (hover, press, launch) and lifts the dash's icon
-clipping. This extension never touches icon transforms, clipping or
-`animateLaunch`, and only re-orders existing icon actors with `set_child_at_index()`,
-so both extensions can run together in any order.
 
 ## Troubleshooting
 
