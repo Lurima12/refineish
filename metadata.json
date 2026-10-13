@@ -1,6 +1,6 @@
 {
-  "uuid": "dash-to-dock-tweaks@lurim412",
-  "name": "Dash to Dock Tweaks",
+  "uuid": "refineish@lurim412",
+  "name": "Refineish",
   "description": "Add-on for Dash to Dock: adjustable gaps between the dock and each screen edge, a light / dark / follow-system dock background, and a customizable dock border.\n\nRequires Dash to Dock (or Ubuntu Dock) to be installed and enabled.",
   "shell-version": ["45", "46", "47", "48", "49", "50"],
   "settings-schema": "org.gnome.shell.extensions.dash-to-dock-tweaks",
