@@ -67,17 +67,6 @@ working. (A margin on the background alone only shrinks the background over the 
 moving the dock actor makes the pointer in the gap miss the dock and autohide bounce.)
 Only the gap for the dock's current position is used.
 
-## Dynamic Music Pill and other dock widgets
-
-Dynamic Music Pill puts its widget inside the dock's hover box, next to the dash, centred on
-that box. The box is taller than the icons (Dash to Dock pads the icon buttons more on the
-screen-edge side, and a gap adds to that), so the widget would not line up with the icons.
-The extension measures the centre of the app icons and the centre of the widget from the
-layout and adds a small transform that centres the widget on the icons. It is applied on top
-of whatever the add-on does itself, so the pill's own offset settings keep working, and it
-works wherever the widget sits in the dock (first, last or at an index). It can be turned off
-on the Gaps page.
-
 ## Separator lines
 
 The separators are plain widgets in the icon box with no margins, like the stock separator.
